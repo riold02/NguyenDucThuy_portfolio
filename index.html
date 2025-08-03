@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nguyễn Đức Thuỷ | CTK46 - Kỹ sư phần mềm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- Smooth Loading Animation -->
+    <div class="page-loader">
+        <div class="loader-container">
+            <div class="loader-circle">
+                <div class="circle-gradient"></div>
+            </div>
+            <p class="loader-text">Đang tải portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Modern Navigation -->
+    <nav class="modern-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-circle">
+                    <span class="brand-initial">N</span>
+                </div>
+                <span class="brand-name">Nguyễn Đức Thuỷ</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">👋</span>
+                    <span class="badge-text">Xin chào, tôi là</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Nguyễn Đức Thuỷ</span>
+                    <span class="title-subtitle">Software Engineer</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Sinh viên năm tư CTK46 tại Đại học Đà Lạt, đam mê phát triển phần mềm 
+                    và luôn tìm tòi những công nghệ mới. Hướng tới trở thành một Software Engineer 
+                    chuyên nghiệp với khả năng giải quyết vấn đề sáng tạo.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Năm học</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Dự án</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Ngôn ngữ</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Liên hệ với tôi</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>Xem dự án</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="avatar.jpg" alt="Nguyễn Đức Thuỷ">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card card-1">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fab fa-microsoft"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Cuộn xuống để khám phá</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-dot"></span>
+                    <span>Về tôi</span>
+                </div>
+                <h2 class="section-title">Tìm hiểu về hành trình của tôi</h2>
+                
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <div class="icon-circle who">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">WHO - Tôi là ai?</h3>
+                        <p class="card-description">
+                            Nguyễn Đức Thuỷ, sinh viên năm tư chuyên ngành Kỹ sư phần mềm tại 
+                            Đại học Đà Lạt, lớp CTK46. Một người trẻ đam mê công nghệ và 
+                            luôn khát khao học hỏi.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Student</span>
+                            <span class="tag">CTK46</span>
+                            <span class="tag">Đà Lạt</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <div class="icon-circle what">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">WHAT - Tôi làm gì?</h3>
+                        <p class="card-description">
+                            Học tập chuyên sâu về lập trình hướng đối tượng, cấu trúc dữ liệu, 
+                            giải thuật và kiến trúc phần mềm. Thành thạo C#, Java, C++ và 
+                            xây dựng các dự án thực tế.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">OOP</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <div class="icon-circle why">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">WHY - Tại sao?</h3>
+                        <p class="card-description">
+                            Đam mê xây dựng phần mềm từ con số 0, biến ý tưởng thành hệ thống 
+                            thực tế. Yêu thích việc tối ưu hiệu năng và giải quyết các bài toán 
+                            phức tạp bằng công nghệ.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Passion</span>
+                            <span class="tag">Innovation</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <div class="icon-circle where">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">WHERE - Ở đâu?</h3>
+                        <p class="card-description">
+                            Đại học Đà Lạt - Khoa Công nghệ thông tin, chuyên ngành Kỹ sư phần mềm. 
+                            Tích cực tham gia các cộng đồng IT và workshop công nghệ.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Đà Lạt University</span>
+                            <span class="tag">IT Faculty</span>
+                            <span class="tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-dot"></span>
+                    <span>Kỹ năng</span>
+                </div>
+                <h2 class="section-title">Công nghệ & Kỹ năng</h2>
+                <p class="section-subtitle">
+                    Các ngôn ngữ lập trình, framework và công cụ tôi sử dụng thành thạo
+                </p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Ngôn ngữ lập trình</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">C#</h4>
+                                <p class="skill-desc">WinForms, WPF, .NET Framework</p>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85">
+                                        <span class="progress-text">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Java</h4>
+                                <p class="skill-desc">Spring Boot, Backend Development</p>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80">
+                                        <span class="progress-text">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">C++</h4>
+                                <p class="skill-desc">Algorithms, System Programming</p>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="75">
+                                        <span class="progress-text">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">Công cụ & Công nghệ</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Git & GitHub</h4>
+                                <p class="skill-desc">Version Control, Collaboration</p>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90">
+                                        <span class="progress-text">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">SQL</h4>
+                                <p class="skill-desc">Database Design, Optimization</p>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80">
+                                        <span class="progress-text">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Entity Framework</h4>
+                                <p class="skill-desc">ORM, Data Access Layer</p>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="70">
+                                        <span class="progress-text">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-dot"></span>
+                    <span>Lộ trình</span>
+                </div>
+                <h2 class="section-title">Hành trình phát triển</h2>
+                <p class="section-subtitle">
+                    Các mốc thời gian quan trọng trong quá trình học tập và phát triển kỹ năng
+                </p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <h3 class="timeline-title">Giai đoạn nền tảng</h3>
+                        <p class="timeline-description">
+                            Học các môn nền tảng về lập trình với C++, Java. Nắm vững các thuật toán 
+                            và cấu trúc dữ liệu cơ bản. Tham gia các cuộc thi lập trình trong trường.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3 class="timeline-title">Chuyên sâu phát triển</h3>
+                        <p class="timeline-description">
+                            Tập trung học C# và phát triển ứng dụng desktop với WinForms, WPF. 
+                            Thực hiện các project thực tế và học về kiến trúc phần mềm.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">WinForms</span>
+                            <span class="skill-tag">WPF</span>
+                            <span class="skill-tag">.NET</span>
+                            <span class="skill-tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">Bước vào sự nghiệp</h3>
+                        <p class="timeline-description">
+                            Tốt nghiệp và chuẩn bị bước vào thị trường lao động. Tìm kiếm cơ hội 
+                            thực tập và làm việc chính thức tại các công ty công nghệ.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Graduation</span>
+                            <span class="skill-tag">Job Search</span>
+                            <span class="skill-tag">Internship</span>
+                            <span class="skill-tag">Career Start</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-dot"></span>
+                    <span>Dự án</span>
+                </div>
+                <h2 class="section-title">Dự án nổi bật</h2>
+                <p class="section-subtitle">
+                    Một số dự án tiêu biểu mà tôi đã thực hiện trong quá trình học tập
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Student Management System">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/riold02" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Desktop Application</div>
+                        <h3 class="project-title">Hệ thống quản lý sinh viên</h3>
+                        <p class="project-description">
+                            Ứng dụng desktop được phát triển bằng C# WinForms, tích hợp với SQL Server 
+                            để quản lý thông tin sinh viên, điểm số và học phí.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">WinForms</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Entity Framework</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Library Management">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/riold02" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Java Application</div>
+                        <h3 class="project-title">Phần mềm quản lý thư viện</h3>
+                        <p class="project-description">
+                            Hệ thống quản lý thư viện được xây dựng bằng Java Swing, hỗ trợ quản lý 
+                            sách, độc giả và quy trình mượn trả sách.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Swing</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JDBC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Modern WPF App">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/riold02" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">WPF Application</div>
+                        <h3 class="project-title">Ứng dụng Desktop hiện đại</h3>
+                        <p class="project-description">
+                            Ứng dụng desktop với giao diện hiện đại sử dụng WPF và pattern MVVM, 
+                            tích hợp Material Design và animations mượt mà.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">WPF</span>
+                            <span class="tech-tag">MVVM</span>
+                            <span class="tech-tag">Material Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-dot"></span>
+                    <span>Liên hệ</span>
+                </div>
+                <h2 class="section-title">Hãy kết nối với tôi</h2>
+                <p class="section-subtitle">
+                    Tôi luôn sẵn sàng thảo luận về các cơ hội hợp tác và dự án thú vị
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="fade-right">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>nguyenducthuydl02@gmail.com</p>
+                            <a href="mailto:nguyenducthuydl02@gmail.com" class="contact-link">Gửi email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/riold02</p>
+                            <a href="https://github.com/riold02" target="_blank" class="contact-link">Xem profile</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Trường học</h3>
+                            <p>Đại học Đà Lạt - CTK46</p>
+                            <a href="#" class="contact-link">Thông tin thêm</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left">
+                    <div class="form-header">
+                        <h3>Gửi tin nhắn</h3>
+                        <p>Tôi sẽ phản hồi trong vòng 24 giờ</p>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Tiêu đề</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tin nhắn</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Gửi tin nhắn</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
