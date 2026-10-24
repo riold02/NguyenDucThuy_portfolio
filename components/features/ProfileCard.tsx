@@ -277,7 +277,9 @@ export default function ProfileCard() {
                   <button
                     className={`status-dot ${siteConfig.status}`}
                     aria-label="Xem trạng thái"
+                    style={{ zIndex: 10 }}
                   />
+
                 </Popover.Trigger>
                 <Popover.Portal>
                   <Popover.Content
