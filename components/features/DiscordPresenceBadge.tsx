@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { Copy, Check, Sparkles, Info, Music, Disc } from "lucide-react";
+import { Copy, Check, Sparkles, Music, Disc, ExternalLink } from "lucide-react";
+
+
 
 import { DiscordIcon } from "@/components/features/PlatformIcons";
 import { siteConfig } from "@/lib/config";
@@ -256,7 +258,7 @@ export default function DiscordPresenceBadge() {
         </div>
 
         {/* Action Buttons */}
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
           <button
             onClick={handleCopyDiscord}
             title="Sao chép Discord handle"
@@ -281,30 +283,57 @@ export default function DiscordPresenceBadge() {
             <span>{copied ? "Đã chép!" : "Copy Handle"}</span>
           </button>
 
+          <a
+            href="https://discord.com/channels/@me"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => playClick()}
+            title="Mở ứng dụng hoặc web Discord"
+            style={{
+              background: "rgba(255, 255, 255, 0.05)",
+              border: "1px solid rgba(255, 255, 255, 0.12)",
+              color: "#cbd5e1",
+              borderRadius: "8px",
+              padding: "6px 11px",
+              fontSize: "0.8rem",
+              fontWeight: 600,
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              textDecoration: "none",
+              transition: "all 0.2s ease",
+            }}
+          >
+            <ExternalLink size={13} />
+            <span>Mở Discord</span>
+          </a>
+
           <button
             onClick={() => {
               playClick();
               setShowIdModal(true);
             }}
-            title="Giải thích cách đồng bộ Discord ID"
+            title="Liên kết & đồng bộ trạng thái Live qua Discord ID"
             style={{
-              background: "rgba(255, 255, 255, 0.05)",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
-              color: "#94a3b8",
+              background: "rgba(88, 101, 242, 0.2)",
+              border: "1px solid rgba(88, 101, 242, 0.4)",
+              color: "#00e5ff",
               borderRadius: "8px",
-              padding: "6px 9px",
+              padding: "6px 10px",
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
-              fontSize: "0.75rem",
-              gap: "4px",
+              fontSize: "0.78rem",
+              fontWeight: 600,
+              gap: "5px",
             }}
           >
-            <Info size={14} />
-            <span>ID Sync</span>
+            <Sparkles size={13} />
+            <span>Liên kết Live ID</span>
           </button>
         </div>
       </div>
+
 
       {/* Spotify Live Activity if listening */}
       {lanyardData?.listening_to_spotify && lanyardData.spotify && (
@@ -422,30 +451,80 @@ export default function DiscordPresenceBadge() {
             </div>
 
             <div style={{ marginBottom: "18px" }}>
-              <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#f2f3f5", marginBottom: "8px" }}>
-                3 bước lấy User ID 18 số của bạn (trong 10 giây):
+              <p style={{ fontSize: "0.85rem", fontWeight: 700, color: "#f2f3f5", marginBottom: "8px" }}>
+                3 bước để liên kết tài khoản Discord và đồng bộ trạng thái Live:
               </p>
-              <ol
-                style={{
-                  fontSize: "0.8rem",
-                  color: "#94a3b8",
-                  paddingLeft: "20px",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "6px",
-                }}
-              >
-                <li>
-                  Mở Discord &gt; Cài đặt người dùng (biểu tượng bánh răng) &gt; chọn mục <strong>Nâng cao (Advanced)</strong>.
-                </li>
-                <li>
-                  Bật công tắc <strong>Chế độ nhà phát triển (Developer Mode)</strong>.
-                </li>
-                <li>
-                  Nhấp chuột phải vào Avatar của bạn &gt; chọn <strong>Sao chép ID người dùng (Copy User ID)</strong>.
-                </li>
-              </ol>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                <div
+                  style={{
+                    background: "rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(88, 101, 242, 0.3)",
+                    borderRadius: "8px",
+                    padding: "10px 14px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: "10px",
+                  }}
+                >
+                  <div style={{ fontSize: "0.8rem", color: "#cbd5e1" }}>
+                    <strong>Bước 1:</strong> Tham gia Server Lanyard (để bot có quyền theo dõi trạng thái)
+                  </div>
+                  <a
+                    href="https://discord.gg/lanyard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      background: "#5865f2",
+                      color: "#fff",
+                      padding: "5px 12px",
+                      borderRadius: "6px",
+                      fontSize: "0.75rem",
+                      fontWeight: 700,
+                      textDecoration: "none",
+                      whiteSpace: "nowrap",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "4px",
+                    }}
+                  >
+                    <span>Vào Server</span>
+                    <ExternalLink size={12} />
+                  </a>
+                </div>
+
+                <div
+                  style={{
+                    background: "rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(255, 255, 255, 0.08)",
+                    borderRadius: "8px",
+                    padding: "10px 14px",
+                    fontSize: "0.8rem",
+                    color: "#cbd5e1",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  <strong>Bước 2:</strong> Lấy User Snowflake ID (18 số) trong Discord:
+                  <div style={{ color: "#94a3b8", fontSize: "0.76rem", marginTop: "2px" }}>
+                    Cài đặt Discord &gt; Nâng cao &gt; Bật <em>Developer Mode</em> &gt; Chuột phải vào Avatar &gt; Chọn <strong>Sao chép ID người dùng (Copy User ID)</strong>.
+                  </div>
+                </div>
+
+                <div
+                  style={{
+                    background: "rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(255, 255, 255, 0.08)",
+                    borderRadius: "8px",
+                    padding: "10px 14px",
+                    fontSize: "0.8rem",
+                    color: "#cbd5e1",
+                  }}
+                >
+                  <strong>Bước 3:</strong> Dán dãy 18 số vào ô dưới đây rồi nhấn <strong>Đồng bộ ngay</strong>.
+                </div>
+              </div>
             </div>
+
 
             <div style={{ marginBottom: "16px" }}>
               <label
