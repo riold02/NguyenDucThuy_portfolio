@@ -8,10 +8,11 @@ import { DiscordIcon } from "@/components/features/PlatformIcons";
 import { playClick } from "@/components/features/SoundToggle";
 
 const PROJECT_TYPES = [
-  { id: "webapp", label: "Web App Next.js Fullstack", desc: "App Router, Database, Auth, Dashboard", est: "Liên hệ để nhận báo giá" },
-  { id: "3dlanding", label: "Landing Page 3D & Interactive", desc: "Three.js WebGL, 60 FPS, High-conversion", est: "Liên hệ để nhận báo giá" },
-  { id: "ecom", label: "Website Bán Hàng / Khóa Học", desc: "Catalog, Giỏ hàng, Thanh toán, Quản lý", est: "Liên hệ để nhận báo giá" },
-  { id: "perf", label: "Tối Ưu SEO & Tốc Độ 99+", desc: "Lighthouse 95+, nén ảnh, Core Web Vitals", est: "Liên hệ để nhận báo giá" },
+  { id: "webapp", label: "Web App & Ứng Dụng Phần Mềm", desc: "Next.js Fullstack, Database, API, Quản trị", est: "Liên hệ để nhận báo giá" },
+  { id: "uiux", label: "Thiết Kế UI/UX & Thiết Kế Sản Phẩm", desc: "Prototype Figma, Design System, Giao diện chuẩn", est: "Liên hệ để nhận báo giá" },
+  { id: "3dlanding", label: "Landing Page 3D & Interactive", desc: "Three.js WebGL, 60 FPS, Trải nghiệm thị giác cao", est: "Liên hệ để nhận báo giá" },
+  { id: "ecom", label: "Nền Tảng Bán Hàng & Dịch Vụ Số", desc: "Catalog, Giỏ hàng, Thanh toán, Tự động hóa", est: "Liên hệ để nhận báo giá" },
+  { id: "perf", label: "Tối Ưu Hiệu Năng & Hệ Thống", desc: "Core Web Vitals 99+, CI/CD, DevOps & Cloud", est: "Liên hệ để nhận báo giá" },
 ];
 
 

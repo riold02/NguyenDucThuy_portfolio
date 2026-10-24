@@ -9,8 +9,8 @@ import { Sparkles, ArrowRight, Zap, Code2 } from "lucide-react";
 
 
 export const metadata: Metadata = {
-  title: `${siteConfig.displayName} — Freelance Fullstack & 3D Web Developer`,
-  description: `${siteConfig.bio} | Chuyên phát triển Web App Next.js 16, Three.js 3D và tối ưu hiệu năng.`,
+  title: `${siteConfig.displayName} — Freelance Fullstack Developer & Designer`,
+  description: `${siteConfig.bio} | Chuyên thiết kế UI/UX, phát triển Web App, phần mềm & 3D tương tác.`,
 };
 
 export default function HomePage() {
@@ -249,7 +249,7 @@ export default function HomePage() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Thiết Kế & Lập Trình Web 3D Đột Phá —{" "}
+              Thiết Kế UI/UX & Phát Triển Phần Mềm, Web 3D Đột Phá —{" "}
               <span
                 style={{
                   background: "linear-gradient(135deg, #00e5ff 0%, #5865f2 50%, #a855f7 100%)",
@@ -257,7 +257,7 @@ export default function HomePage() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Mượt Mà, Chuẩn SEO & Tối Ưu Doanh Số.
+                Mượt Mà, Toàn Diện & Chuẩn Quốc Tế.
               </span>
             </h1>
 
@@ -270,8 +270,8 @@ export default function HomePage() {
               }}
             >
               Xin chào, tôi là <strong>{siteConfig.displayName}</strong>. Tôi đồng hành cùng các
-              Doanh nghiệp, Startup và Nhà sáng tạo để xây dựng các ứng dụng Web Next.js 16,
-              giao diện 3D WebGL Three.js tương tác cao cấp, cam kết bàn giao đúng hạn và tốc độ tải trang dưới 1 giây.
+              Doanh nghiệp, Startup và Nhà sáng tạo để thiết kế giao diện UI/UX, phát triển ứng dụng Web &amp; phần mềm số,
+              tích hợp giải pháp 3D tương tác cao cấp, cam kết đúng hạn và tối ưu trải nghiệm người dùng thực tế.
             </p>
 
             {/* Discord Presence & Live Widget */}
@@ -309,7 +309,7 @@ export default function HomePage() {
               >
                 <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "#00e5ff" }}>99+</div>
                 <div style={{ fontSize: "0.78rem", color: "#94a3b8", fontWeight: 600 }}>
-                  Google Lighthouse Score
+                  Hiệu năng &amp; Trải nghiệm
                 </div>
               </div>
 
@@ -321,9 +321,9 @@ export default function HomePage() {
                   padding: "12px 16px",
                 }}
               >
-                <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "#8ab4d4" }}>TypeScript</div>
+                <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "#8ab4d4" }}>Đa Năng</div>
                 <div style={{ fontSize: "0.78rem", color: "#94a3b8", fontWeight: 600 }}>
-                  Strict Typing 100%
+                  Web, App, UI/UX &amp; 3D
                 </div>
               </div>
 

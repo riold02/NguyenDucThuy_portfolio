@@ -683,8 +683,8 @@ export default function ProfileCard() {
                         margin: "0 0 12px",
                       }}
                     >
-                      Nhận phát triển <strong>Fullstack Web, Interactive 3D Landing Page</strong> và tối ưu UI/UX mượt mà trên Next.js & React.
-                      Cam kết chất lượng mã nguồn sạch, tốc độ tải trang nhanh và hỗ trợ bàn giao tận tâm.
+                      Nhận thiết kế & phát triển <strong>Phần mềm, Web App, UI/UX & Interactive 3D</strong> toàn diện.
+                      Cam kết chất lượng mã nguồn sạch, trải nghiệm mượt mà và bàn giao tận tâm.
                     </p>
 
                     <button

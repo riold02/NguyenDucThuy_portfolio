@@ -82,8 +82,8 @@ export default function AboutPage() {
             </div>
 
             <p style={{ fontSize: "0.9rem", color: "var(--color-text-secondary)", lineHeight: 1.65, margin: 0 }}>
-              Software Developer đam mê tạo ra các giao diện web mượt mà, trực quan và có hiệu năng cao.
-              Ưu tiên giải pháp kỹ thuật tinh gọn, giải quyết bài toán thực tế và mang lại trải nghiệm tương tác tốt nhất cho người dùng.
+              Developer &amp; Designer đam mê tạo ra các giải pháp phần mềm, giao diện UI/UX trực quan, Web App mượt mà và trải nghiệm tương tác 3D chất lượng cao.
+              Ưu tiên giải pháp kỹ thuật tinh gọn, giải quyết bài toán thực tế và mang lại giá trị bền vững cho người dùng và doanh nghiệp.
             </p>
           </div>
 
